@@ -3,10 +3,11 @@ from pytz import *
 from timezonefinder import TimezoneFinder
 from sunnyday import Weather
 from random import uniform
+from folium import Marker
 
-
-class Geopoint:
-    def __init__(self, latitude, longitude):
+class Geopoint(Marker):
+    def __init__(self, latitude, longitude, ):
+        super().__init__(location = [latitude,longitude])
         self.latitude = latitude
         self.longitude = longitude
 
