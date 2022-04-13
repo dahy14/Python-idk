@@ -25,12 +25,13 @@ class Geopoint(Marker):
     @classmethod
     def random(cls):
         return cls(latitude = uniform(-90, 90), longitude = uniform(-180, 180))
+    
 
 
-Tokyo = Geopoint(35.68, 139.69)
-random = Geopoint.random()
+# Tokyo = Geopoint(35.68, 139.69)
+# print(Tokyo.get_weather())
  
-
+# Manila = Geopoint(14.58, 121.04)
+# print(Manila.get_weather())
 # print(Tokyo.get_time())
 # print(Tokyo.get_weather())
-
